@@ -1,3 +1,17 @@
 .Category {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #343a40;
+  border: 1px solid #495057;
+  border-radius: 20px;
+  height: 5px;
+  padding-top: 5px;
 }

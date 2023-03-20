@@ -1,11 +1,15 @@
-import { Title } from '@mantine/core';
+import { SimpleGrid, Title } from '@mantine/core';
 import './Category.css'
+import Show from './Show';
 
-function Category({ title, shows }) {
+function Category({ title, shows = [] }) {
   return (
-    <div className='Category'>
+    <>
       <Title order={3}>{title}</Title>
-    </div>
+      <div className="Category">
+        {shows.map(show => <Show key={show.id} {...show} />)}
+      </div>
+    </>
   )
 }
 

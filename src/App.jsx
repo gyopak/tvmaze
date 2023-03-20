@@ -1,13 +1,12 @@
-import { AppShell, Title } from '@mantine/core';
-import { useState } from 'react'
-import './App.css'
+import { AppShell } from '@mantine/core';
 import Category from './Category';
 import { useShowsByCategory } from './features/showsByCategory'
 import Header from './Header';
+import './App.css'
 
 function App() {
   const { shows } = useShowsByCategory()
-  const categories = Object.keys(shows || {})
+  const categories = Object.keys(shows || {}).sort()
   return (
     <AppShell header={<Header />}>
       <div className="Categories">
