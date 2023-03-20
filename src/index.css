@@ -1,0 +1,17 @@
+:root {
+  --main-bg-color: #191919;
+  --main-text-color: #FFFFFF;
+  --main-shadow-color: #C5C7C3;
+  --active-bg-color: #4A52FF;
+  --active-light-color: #7c83ff;
+
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
