@@ -29,5 +29,6 @@
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  background-color: black;
+  z-index: 100;
+  /* background-color: black; */
 }
