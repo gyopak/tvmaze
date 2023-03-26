@@ -1,22 +1,27 @@
 import { Card, Image, Group, Title } from '@mantine/core';
 import './Show.css'
 
-function Show({ name, image }) {
+function Show(show) {
+  const { name, image, titleOnly, setSelectedShow } = show
+
   return (
-    <div className="Show">
-      <Card shadow="sm" padding="lg" radius="md" withBorder style={{
-        width: '200px',
+    <div className={titleOnly ? 'Show TitleOnly' : 'Show'}>
+      <Card shadow="sm" padding="lg" radius="md" onClick={() => setSelectedShow(show)} withBorder style={{
+        width: '150px',
+        height: '100%',
         paddingBottom: '0',
       }}>
-        <Card.Section>
-          <Image
-            src={image?.medium}
-            alt={name}
-          />
-        </Card.Section>
+        {!titleOnly && (
+          <Card.Section>
+            <Image
+              src={image?.medium}
+              alt={name}
+            />
+          </Card.Section>
+        )}
 
         <Group position="apart" mt="md" mb="xs">
-          <Title order={6} style={{
+          <Title order={titleOnly ? 3 : 6} style={{
             overflow: 'hidden',
             whiteSpace: 'nowrap',
             textOverflow: 'ellipsis',

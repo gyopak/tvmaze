@@ -6,8 +6,11 @@ export const showsApi = createApi({
   endpoints: builder => ({
     getShows: builder.query({
       query: () => '/shows'
+    }),
+    searchShows: builder.query({
+      query: ({ q }) => `/search/shows?q=${q}`
     })
   }),
 })
 
-export const { useGetShowsQuery } = showsApi
+export const { useGetShowsQuery, useSearchShowsQuery } = showsApi
