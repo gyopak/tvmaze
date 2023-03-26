@@ -23,7 +23,7 @@
 
 @media (max-width: 1000px) {
   .Category {
-    zoom: 0.4;
+    /* zoom: 0.85; */
   }
 }
 

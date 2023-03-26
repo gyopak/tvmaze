@@ -16,6 +16,13 @@
   margin-bottom: 1rem !important;
 }
 
+@media (max-width: 600px) {
+  .ShowDescription {
+    transform: translateY(-60px);
+    background: rgba(0,0,0,0.5);
+  }
+}
+
 .ShowDescription > .mantine-Title-root {
   margin-bottom: 0.6rem;
 }

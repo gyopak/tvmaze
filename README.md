@@ -8,4 +8,4 @@ A simple client for TVMAZE api
 
 ## Live preview
 
-Check the deployed demo [here](https://)
+Check the deployed demo [here](https://tvmz.netlify.app)
